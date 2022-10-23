@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <div id="celebration">                                                                                              <!--div caché tant que les vétements choisi ne sont pas valides pour la saison affichée-->
+            <img src="assets/celebration.gif">
+            <h2>Bravo, tu as gagné</h2>
+        </div>
+
+        <div class="title">
+            <h1 id="season">Saison</h1>
+            <button onclick="changeSeason()" id="change-season"><img src="assets/Refresh_icon.svg.png"></button>
+        </div>
+
+        <div class="choice-area">
+            <button data-pos="top" data-dir="left" class="left btn">                                                        <!--data-dir renseigne la direction vers laquelle le bouton pointe, data-pos renseigne à quelle "hautuer" le bouton se situe-->
+                    
+            </button>
+            <div id="div-top" class="box">
+                
+            </div>
+            <button data-pos="top" data-dir="right" class="right btn">
+                    
+            </button>
+        </div>
+
+        <div class="choice-area">
+            <button data-pos="mid" data-dir="left" class="left btn">
+                    
+            </button>
+            <div id="div-mid" class="box">
+                
+            </div>
+            <button data-pos="mid" data-dir="right" class="right btn">
+                    
+            </button>
+        </div>
+
+        <div class="choice-area">
+            <button data-pos="bot" data-dir="left" class="left btn">
+                    
+            </button>
+            <div id="div-bot" class="box">
+                
+            </div>
+            <button data-pos="bot" data-dir="right" class="right btn">
+                    
+            </button>
+        </div>
+
+        <button onclick="reply()" id="reply">
+            
+            <h2>Valider</h2>
+        </button>
+        <script src="index.js"></script>
+    </body>
+</html>
